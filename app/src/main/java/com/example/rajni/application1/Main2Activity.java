@@ -38,13 +38,13 @@ public class Main2Activity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
         location=(TextView)findViewById(R.id.location) ;
-        location.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent=new Intent(Main2Activity.this,MapsActivity.class);
-                startActivity(intent);
-            }
-        });
+//        location.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent=new Intent(Main2Activity.this,MapsActivity.class);
+//                startActivity(intent);
+//            }
+//        });
 
     }
     public  void open(View v)

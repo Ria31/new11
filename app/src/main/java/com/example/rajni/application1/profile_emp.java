@@ -21,19 +21,19 @@ public class profile_emp extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 Fragment SF = null;
                 switch (item.getItemId()){
-                    case R.id.home :
+                    case R.id.home1 :
                         setTitle("Home");
                         SF = new home1();
                         break;
-                    case R.id.event :
+                    case R.id.event1 :
                         setTitle("Event");
                         SF = new event1();
                         break;
-                    case R.id.appointment :
+                    case R.id.appointment1 :
                         setTitle("Appointment");
                         SF = new appointment1();
                         break;
-                    case R.id.profile :
+                    case R.id.profile1 :
                         setTitle("Profile");
                         SF = new profile1();
                         break;

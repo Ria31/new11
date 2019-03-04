@@ -34,7 +34,7 @@ public class login extends AppCompatActivity implements TextWatcher,CompoundButt
     private static final String PREF_Name="prefsfile";
     SharedPreferences.Editor editor;
 
-    String URL= "http://192.168.0.104/Android/index1.php";
+    String URL= "http://192.168.43.150/Android11/index1.php";
 
     JSONParser jsonParser=new JSONParser();
 
@@ -68,7 +68,7 @@ public class login extends AppCompatActivity implements TextWatcher,CompoundButt
         reg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(login.this,registration_emp1.class);
+                Intent i = new Intent(login.this,registration_emp2.class);
                 startActivity(i);
             }
         });
@@ -77,7 +77,7 @@ public class login extends AppCompatActivity implements TextWatcher,CompoundButt
             public void onClick(View view) {
 
                 AttemptLogin attemptLogin= new AttemptLogin();
-                attemptLogin.execute(uid.getText().toString(),pwd.getText().toString(),"");
+                attemptLogin.execute(uid.getText().toString(),pwd.getText().toString());
 
                 if(uid.getText().toString().trim().length()==0){
                     uid.setError("Enter your userID");
@@ -126,6 +126,7 @@ public class login extends AppCompatActivity implements TextWatcher,CompoundButt
         }else{
             editor.remove("pref_name");
             editor.remove("pref_pwd");
+
             editor.putBoolean("pref_check",false);
             editor.apply();
 

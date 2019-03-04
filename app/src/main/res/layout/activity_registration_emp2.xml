@@ -4,29 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/main1"
     android:paddingBottom="15dp"
     android:paddingLeft="25dp"
     android:paddingRight="5dp"
     android:paddingTop="15dp"
     tools:context=".registration_emp2"
     android:id="@+id/r4">
+
     <EditText
         android:id="@+id/eid"
         android:layout_width="330dp"
         android:layout_height="46dp"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="280dp"
         android:fontFamily="@font/"
         android:hint="EmployeeID Or DoctorID"
-        android:paddingBottom="12dp"
         android:paddingLeft="5dp"
-        android:paddingRight="12dp"
         android:paddingTop="12dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="12dp"
         android:textAllCaps="false"
         android:textColor="#2d2727"
-        android:textSize="17dp"
-        android:layout_marginBottom="380dp"/>
+        android:textSize="17dp" />
     <EditText   android:id="@+id/email"
         android:layout_width="330dp"
         android:layout_height="46dp"
@@ -41,7 +40,7 @@
         android:textAllCaps="false"
         android:textColor="#2d2727"
         android:textSize="17dp"
-        android:layout_marginBottom="330dp"
+        android:layout_marginBottom="230dp"
         />
 
     <EditText
@@ -59,7 +58,7 @@
         android:textAllCaps="false"
         android:textColor="#2d2727"
         android:textSize="17dp"
-        android:layout_marginBottom="280dp"
+        android:layout_marginBottom="180dp"
         />
     <EditText
         android:id="@+id/password"
@@ -76,7 +75,7 @@
         android:textAllCaps="false"
         android:textColor="#2d2727"
         android:textSize="17dp"
-        android:layout_marginBottom="230dp"
+        android:layout_marginBottom="130dp"
         android:inputType="textPassword"
 
         />
@@ -95,7 +94,7 @@
         android:textAllCaps="false"
         android:textColor="#2d2727"
         android:textSize="17dp"
-        android:layout_marginBottom="180dp"
+        android:layout_marginBottom="80dp"
         android:inputType="textPassword"
 
         />
@@ -106,11 +105,13 @@
         android:layout_height="46dp"
         android:layout_alignStart="@+id/eid"
         android:layout_alignTop="@+id/submit"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="-3dp"
         android:background="@drawable/round1"
-        android:paddingBottom="12dp"
         android:paddingLeft="20dp"
-        android:paddingRight="12dp"
         android:paddingTop="12dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="12dp"
         android:text="Cancle"
         android:textAlignment="center"
         android:textAllCaps="true"
@@ -122,18 +123,88 @@
         android:layout_height="46dp"
         android:layout_alignEnd="@+id/eid"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="100dp"
+        android:layout_marginEnd="-3dp"
+        android:layout_marginBottom="8dp"
         android:background="@drawable/round1"
-        android:paddingBottom="12dp"
         android:paddingLeft="20dp"
-        android:paddingRight="12dp"
         android:paddingTop="12dp"
+        android:paddingRight="12dp"
+        android:paddingBottom="12dp"
         android:text="Submit"
         android:textAlignment="center"
         android:textAllCaps="true"
-        android:textSize="16dp"
-        />
+        android:textSize="16dp" />
 
+    <EditText
+        android:id="@+id/dob"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="330dp"
+        android:fontFamily="@font/"
+        android:layout_width="330dp"
+        android:layout_height="46dp"
+        android:hint="Date Of Birth"
+        android:paddingBottom="12dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="12dp"
+        android:paddingTop="12dp"
+        android:textAllCaps="false"
+        android:textColor="#2d2727"
+        android:textSize="17dp"
+        />
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/gender"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="370dp"
+        android:fontFamily="@font/"
+        android:layout_width="330dp"
+        android:layout_height="46dp"
+        android:entries="@array/gender"
+        android:autofillHints="@string/gender"/>
+    <EditText
+        android:id="@+id/fname"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="510dp"
+        android:fontFamily="@font/"
+        android:layout_width="330dp"
+        android:layout_height="46dp"
+        android:hint="First Name"
+        android:paddingBottom="12dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="12dp"
+        android:paddingTop="12dp"
+        android:textAllCaps="false"
+        android:textColor="#2d2727"
+        android:textSize="17dp"/>
+    <EditText
+        android:id="@+id/mname"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="460dp"
+        android:fontFamily="@font/"
+        android:layout_width="330dp"
+        android:layout_height="46dp"
+        android:hint="Middle Name"
+        android:paddingBottom="12dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="12dp"
+        android:paddingTop="12dp"
+        android:textAllCaps="false"
+        android:textColor="#2d2727"
+        android:textSize="17dp"/>
+    <EditText
+        android:id="@+id/lname"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="410dp"
+        android:fontFamily="@font/"
+        android:layout_width="330dp"
+        android:layout_height="46dp"
+        android:hint="Last Name"
+        android:paddingBottom="12dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="12dp"
+        android:paddingTop="12dp"
+        android:textAllCaps="false"
+        android:textColor="#2d2727"
+        android:textSize="17dp"/>
 
 
 </RelativeLayout>

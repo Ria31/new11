@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingTop="10dp"
+        android:text="My Appointments"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/v1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:text="Choose the date"
+        android:textColor="@android:color/background_dark" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#50000000"
+        android:text="Select Date"
+        android:textAllCaps="false"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#50000000"
+        android:text="Select Time"
+        android:textAllCaps="false"
+        android:textSize="18sp" />
+
+    <android.support.design.card.MaterialCardView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <TextView
+            android:id="@+id/v2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingStart="5dp"
+            android:text="No Appointments !"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/v3"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="60dp"
+            android:paddingStart="5dp"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/v5"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="85dp"
+            android:paddingStart="5dp"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="14sp" />
+        <TextView
+            android:id="@+id/v4"
+            android:layout_width="match_parent"
+            android:text="Venu : Ahmedabad "
+            android:layout_height="20dp"
+            android:layout_marginTop="105dp"
+            android:paddingStart="5dp"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="14sp" />
+    </android.support.design.card.MaterialCardView>
+
+</LinearLayout>

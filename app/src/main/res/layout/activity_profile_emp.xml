@@ -14,8 +14,10 @@
            android:layout_height="wrap_content"
            android:layout_gravity="bottom"
            android:id="@+id/bottom_navigation_emp"
+           app:menu="@menu/nav1"
            android:foreground="?android:attr/selectableItemBackground"
            android:background="?android:windowBackground"
-           app:menu="@menu/menu2"></android.support.design.widget.BottomNavigationView>
+
+           ></android.support.design.widget.BottomNavigationView>
    </FrameLayout>
 </RelativeLayout>

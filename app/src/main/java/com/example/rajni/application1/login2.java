@@ -56,13 +56,13 @@ public class login2 extends AppCompatActivity implements TextWatcher,CompoundBut
         text= Html.fromHtml("<a href='https://www.google.co.in//'>Forget your password?</a>");
         fpwd.setMovementMethod(LinkMovementMethod.getInstance());
         fpwd.setText(text);
-        reg.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i2 = new Intent(login2.this,registration_safetyofficer.class);
-                startActivity(i2);
-            }
-        });
+//        reg.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent i2 = new Intent(login2.this,registration_safetyofficer.class);
+//                startActivity(i2);
+//            }
+//        });
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -75,10 +75,10 @@ public class login2 extends AppCompatActivity implements TextWatcher,CompoundBut
                     pwd.setError("Enter your password");
                     pwd.requestFocus();
                 }
-                else{
-                    Intent intent2=new Intent(login2.this,profile_safetyofficer.class);
-                    startActivity(intent2);
-                }
+//                else{
+//                    Intent intent2=new Intent(login2.this,profile_safetyofficer.class);
+//                    startActivity(intent2);
+//                }
             }
         });
     }
