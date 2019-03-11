@@ -34,7 +34,7 @@ public class login extends AppCompatActivity implements TextWatcher,CompoundButt
     private static final String PREF_Name="prefsfile";
     SharedPreferences.Editor editor;
 
-    String URL= "http://192.168.43.150/Android11/index1.php";
+    String URL= "http://172.20.10.4/Android11/index1.php";
 
     JSONParser jsonParser=new JSONParser();
 
@@ -72,6 +72,9 @@ public class login extends AppCompatActivity implements TextWatcher,CompoundButt
                 startActivity(i);
             }
         });
+
+        boolean hasLoggedIn = mpref.getBoolean("hasLoggedIn", false);
+
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -87,10 +90,10 @@ public class login extends AppCompatActivity implements TextWatcher,CompoundButt
                     pwd.setError("Enter your password");
                     pwd.requestFocus();
                 }
-                else{
-                    Intent intent=new Intent(login.this,profile_emp.class);
-                    startActivity(intent);
-                }
+//                else{
+//                    Intent intent=new Intent(login.this,profile_emp.class);
+//                    startActivity(intent);
+//                }
             }
         });
     }
@@ -168,6 +171,14 @@ public class login extends AppCompatActivity implements TextWatcher,CompoundButt
             try {
                 if (result != null) {
                     Toast.makeText(getApplicationContext(),result.getString("message"),Toast.LENGTH_LONG).show();
+
+                    mpref.edit().putBoolean("logged",true).apply();
+                    editor.putBoolean("hasLoggedIn", true);
+                    editor.commit();
+
+                        Intent intent=new Intent(login.this,profile_emp.class);
+                        startActivity(intent);
+
                 } else {
                     Toast.makeText(getApplicationContext(), "Unable to retrieve any data from server", Toast.LENGTH_LONG).show();
                 }

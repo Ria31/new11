@@ -27,8 +27,6 @@ public class login1 extends AppCompatActivity implements TextWatcher,CompoundBut
     private static final String PREF_Name="prefsfile1";
     SharedPreferences.Editor editor;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

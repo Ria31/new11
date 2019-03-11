@@ -82,7 +82,7 @@ public class registration_emp2 extends AppCompatActivity {
 
                 AttemptLogin1 attemptLogin= new AttemptLogin1();
                 attemptLogin.execute(fname.getText().toString(),mname.getText().toString(),lname.getText().toString()
-                        ,dob.getText().toString(),gender.toString(),employeeid.getText().toString(),emailid.getText().toString(),contactno.getText().toString()
+                        ,employeeid.getText().toString(),emailid.getText().toString(),contactno.getText().toString()
                         ,password2.getText().toString());
 
                 if(employeeid.getText().toString().trim().length()==0){
@@ -157,19 +157,15 @@ public class registration_emp2 extends AppCompatActivity {
             String fname = args[0];
             String mname = args[1];
             String lname= args[2];
-            String dob = args[3];
-            String gender = args[4];
-            String eid = args[5];
-            String email = args[6];
-            String contact= args[7];
-            String pass = args[8];
+            String eid = args[3];
+            String email = args[4];
+            String contact= args[5];
+            String pass = args[6];
 
             ArrayList params = new ArrayList();
             params.add(new BasicNameValuePair("Firstname", fname));
             params.add(new BasicNameValuePair("Middlename", mname));
             params.add(new BasicNameValuePair("Lastname", lname));
-            params.add(new BasicNameValuePair("Birtdate", dob));
-            params.add(new BasicNameValuePair("Gender", gender));
             params.add(new BasicNameValuePair("EmployeeID", eid));
             params.add(new BasicNameValuePair("EmailID", email));
             params.add(new BasicNameValuePair("ContactNo", contact));
